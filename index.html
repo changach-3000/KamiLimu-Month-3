@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Level 1: Song Lyrics 1 -->
+        <div class="level" id="level-1">
+            <h2>Level 1: Complete the Song Lyrics</h2>
+            <p>Fill in the missing lyrics:</p>
+            <p class="lyrics">"See the line where the sky meets the sea, it calls me,
+                And no one knows [________]..."</p>
+            <input type="text" id="lyrics-1-input" placeholder="Type the missing lyrics...">
+            <button onclick="checkLyrics1()">Submit</button>
+            <div class="summary" id="summary-1"></div>
+            <button id="next-1" class="next-button" onclick="nextLevel('level-2')">Next</button>
+        </div>
+
+        <!-- Level 2: Movie Title 1 -->
+        <div class="level" id="level-2">
+            <h2>Level 2: Guess the Movie Title</h2>
+            <p>Description: A superhero family hides their powers but must unite to save the world from a diabolical villain. Get ready for some ‘incredible’ action!</p>
+            <input type="text" id="movie-1-input" placeholder="Guess the movie title...">
+            <button onclick="checkMovie1()">Submit</button>
+            <div class="summary" id="summary-2"></div>
+            <button id="next-2" class="next-button" onclick="nextLevel('level-3')">Next</button>
+        </div>
+
+        <!-- Level 3: Famous Person 1 -->
+        <div class="level" id="level-3">
+            <h2>Level 3: Identify the Famous Person</h2>
+            <p>An inventor, painter, and thinker, this Renaissance genius sketched flying machines and painted the world’s most famous smile.</p>
+            <input type="text" id="person-1-input" placeholder="Guess the person's name...">
+            <button onclick="checkPerson1()">Submit</button>
+            <div class="summary" id="summary-3"></div>
+            <button id="next-3" class="next-button" onclick="nextLevel('level-4')">Next</button>
+        </div>
+
+        <!-- Repeat for levels 4, 5, and 6 -->
+        <!-- Level 4: Song Lyrics 2 -->
+        <div class="level" id="level-4">
+            <h2>Level 4: Complete the Song Lyrics</h2>
+            <p>Fill in the missing lyrics:</p>
+            <p class="lyrics">"Never gonna give you up, Never gonna let you down, Never gonna run around and [________]"</p>
+            <input type="text" id="lyrics-2-input" placeholder="Type the missing lyrics...">
+            <button onclick="checkLyrics2()">Submit</button>
+            <div class="summary" id="summary-4"></div>
+            <button id="next-4" class="next-button" onclick="nextLevel('level-5')">Next</button>
+        </div>
+
+        <!-- Level 5: Movie Title 2 -->
+        <div class="level" id="level-5">
+            <h2>Level 5: Guess the Movie Title</h2>
+            <p>Description: A forgetful fish and an anxious clownfish cross the ocean in search of a lost son. They meet sharks, turtles, and even a whale on this wild adventure.</p>
+            <input type="text" id="movie-2-input" placeholder="Guess the movie title...">
+            <button onclick="checkMovie2()">Submit</button>
+            <div class="summary" id="summary-5"></div>
+            <button id="next-5" class="next-button" onclick="nextLevel('level-6')">Next</button>
+        </div>
+
+        <!-- Level 6: Famous Person 2 -->
+        <div class="level" id="level-6">
+            <h2>Level 6: Identify the Famous Person</h2>
+            <p>Description: A powerful queen of Egypt known for her wit, charm, and legendary love stories. She played a key role in the political dramas of ancient Rome.</p>
+            <input type="text" id="person-2-input" placeholder="Guess the person's name...">
+            <button onclick="checkPerson2()">Submit</button>
+            <div class="summary" id="summary-6"></div>
+            <button id="next-6" class="next-button" onclick="showFinishScreen()">Finish</button>
+        </div>
+
+        <!-- Finish Screen -->
+        <div class="finish-screen" id="finish-screen">
+            <h2>Congratulations!🎊</h2>
+            <p>You've completed all levels.</p>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

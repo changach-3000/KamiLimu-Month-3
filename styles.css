@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Matemasie&display=swap');
+
+html {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+/* styles.css */
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/008/291/481/non_2x/cute-pastel-memphis-style-template-wallpaper-concept-free-vector.jpg");
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f08f54;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.level {
+    display: none;
+    margin-bottom: 20px;
+    
+}
+
+.level h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #1d5531;
+}
+
+.level p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.level input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 3px dotted #1b6435;
+    border-radius: 5px;
+}
+
+.level button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1b6435;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.level button:hover {
+    background-color: #1b6435;
+}
+
+.summary {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #0b4518;
+    display: none;
+    border-style: dotted;
+}
+.summary p {
+    color:#1b6435;
+    font-size: 18px;
+}
+.summary ol {
+    border-style:double;
+    font-size: 16px;
+}
+.summary li {
+    font-size: 18px;
+    color: #fff;
+}
+.finish-screen {
+    display: none;
+}
+
+.finish-screen h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:#1b6435;
+}
+
+.finish-screen button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.finish-screen button:hover {
+    background-color: #e0a800;
+}
